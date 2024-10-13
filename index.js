@@ -8,8 +8,9 @@ const cors = require('cors');
 const app = express();
 
 app.use(cors({
-  origin: 'https://social-media-tasks.vercel.app/'
-}));
+    origin: 'https://social-media-tasks.vercel.app/'
+  }));
+  
 
 app.use(express.urlencoded({ extended: true }));
 
