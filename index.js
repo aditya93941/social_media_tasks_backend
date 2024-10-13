@@ -8,7 +8,7 @@ const cors = require('cors');
 const app = express();
 
 app.use(cors({
-  origin: 'http://localhost:3000'
+  origin: 'https://social-media-tasks.vercel.app/'
 }));
 
 app.use(express.urlencoded({ extended: true }));
