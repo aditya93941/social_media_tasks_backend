@@ -69,7 +69,7 @@ app.get('/submissions', (req, res) => {
       id: row.id,
       name: row.name,
       handle: row.handle,
-      images: row.images.split(',').map((filename) => `http://localhost:5000/uploads/${filename}`) // Append the correct URL path
+      images: row.images.split(',').map((filename) => `https://social-media-tasks-backend.onrender.com/uploads/${filename}`) // Append the correct URL path
     }));
 
     res.json(users);
